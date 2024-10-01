@@ -1,0 +1,162 @@
+/* Polices */
+@font-face {
+    font-family: police-logo;
+    src: url("fonts/zeldadxt.eot");
+    src: url("fonts/zeldadxt.woff") format("woff"),
+    url("fonts/zeldadxt.ttf") format("truetype");
+}
+body { font-family: Arial, sans-serif; font-size: 16px; background-color: #f2f7ff; }
+h1, h2, h3, h4, h5, h6 { font-family: "Pokemon Solid", sans-serif; text-transform: uppercase; }
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+/* Barre de navigation */
+.topbar { display: flex; justify-content: space-between; align-items: center; background-color: #f2f2f2; padding: 10px; }
+.topbar ul { display: flex; align-items: center; list-style-type: none; margin: 0; padding: 0; }
+.topbar ul li { margin: 0 10px; }
+.topbar ul li a { color: #000; text-decoration: none; }
+.topbar ul li a:hover { text-decoration: underline; }
+.topbar #logo-title { font-family: police-logo; text-align: center; font-size: 40px; margin: 0; padding: 0; }
+.topbar #Center { color: #4CAF50; }
+
+/* Formulaire de connexion */
+.login { display: flex; align-items: center; }
+.login label { margin-right: 10px; }
+.login input[type="text"], .login input[type="password"] { padding: 5px; margin-right: 10px; border: none; border-radius: 3px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+.login input[type="submit"] { background-color: #4CAF50; color: #fff; border: none; border-radius: 3px; padding: 5px 10px; cursor: pointer; transition: background-color 0.3s ease; }
+.login input[type="submit"]:hover { background-color: #339933; }
+
+/* Message de bienvenue */
+.sayHello { list-style-type: none; margin: 0; padding: 0; display: flex; align-items: center; }
+.sayHello li { margin-right: 10px; }
+
+/* Séparateur */
+.trait-separateur { height: 1px; background-color: #ccc; margin: 10px 0; }
+
+/* Liens */
+a { color: #337ab7; }
+
+/* Erreur */
+.error { color: red; }
+
+/* Contenu de la page d'accueil */
+.content-homepage { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.accueil { display: flex; justify-content: space-around; flex-wrap: wrap; }
+.accueil div { position: relative; width: 200px; height: 200px; background-color: #fff; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); border-radius: 10px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; transition: transform 0.3s ease-in-out; }
+.accueil div:hover { transform: translateY(-10px); cursor: pointer; }
+.accueil-icon { font-size: 48px; margin-bottom : 10px; }
+.accueil a {position: absolute; top: 0; bottom: 0; left: 0; right: 0; color: #000; text-decoration: none; font-size: 18px; }
+
+/* Message de bienvenue */
+.sayHello { list-style-type: none; margin: 0; padding: 0; display: flex; align-items: center; }
+.sayHello li { margin-right: 10px; }
+
+/* Conteneur de la liste des joueurs */
+.content-players { max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f5f5; }
+
+/* Liste des joueurs */
+.joueur-liste { list-style-type: none; padding: 0; margin: 0; }
+.joueur-liste li { border-bottom: 1px solid #ddd; padding: 10px; }
+.joueur-liste li a { color: #337ab7; text-decoration: none; }
+.joueur-liste li a:hover { text-decoration: underline; }
+
+/* Conteneur de la liste des échanges */
+.content-exchange { margin: 20px; }
+
+/* Liste des échanges */
+.exchange-liste { list-style: none; padding: 0; }
+.exchange-liste li { display: flex; align-items: center; margin: 20px 0; }
+.exchange-liste img { width: 50px; height: 50px; margin-right: 10px; }
+
+/* Bouton d'échange */
+.content-exchange a { background-color: #4CAF50; color: #fff; padding: 10px; border-radius: 5px; text-decoration: none; }
+.content-exchange a:hover { background-color: #339933; }
+
+/* Titre de la section des échanges */
+.content-exchange p { font-size: 18px; font-weight: bold; margin: 20px; }
+
+/* Conteneur de la section des échanges recherchés */
+.content-wantedExchange { width: 80%; margin: 0 auto; padding: 20px; }
+
+/* Liste des échanges recherchés */
+.wantedExchange-liste { margin-bottom: 50px; padding: 0; }
+.wantedExchange-liste p { margin: 0 0 5px; font-weight: bold; }
+.wantedExchange-liste li { display: inline-block; margin-right: 10px; background-color: #f8d5a3; border-radius: 5px; padding: 5px 10px; }
+
+/* Styles pour le formulaire de validation de l'échange */
+
+.validate-exchange { margin-top: 30px; }
+.validate-exchange ul,
+.create-exchange form { margin-top: 30px; }
+
+.validate-exchange label, .create-exchange label { display: block; margin-bottom: 10px; font-weight: bold; }
+
+.validate-exchange input[type="text"],
+.create-exchange input[type="text"],
+.create-exchange input[type="submit"] { padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+
+.create-exchange input[type="submit"] { background-color: #f8d5a3; border: 1px solid #ccc; cursor: pointer; transition: background-color 0.3s ease; }
+
+.validate-exchange input[type="submit"]:hover,
+.create-exchange input[type="submit"]:hover { background-color: #d89c5b; }
+.create-exchange { margin: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+
+/* Styles pour la table des pokemons */
+
+.table-pokemons { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+.table-pokemons th, .table-pokemons td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+.table-pokemons th { background-color: #f2f2f2; }
+.table-pokemons td img { width: 50px; height: 50px; }
+
+/* Styles pour le formulaire de création d'échange */
+
+.create-exchange input[type="text"],
+.create-exchange input[type="submit"] { padding: 5px; border-radius: 3px; }
+.create-exchange input[type="submit"] { background-color: #4CAF50; color: white; transition: background-color 0.3s ease; }
+.create-exchange input[type="submit"]:hover { background-color: #339933;}
+
+/* Style des liens externes */
+.lien-externe a { color: blue; }
+
+/* Style de la liste des Pokémon à échanger */
+.pokemon-in-exchange { margin-top: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; list-style: none; }
+
+/* Style des labels pour ajouter un Pokémon */
+.add-pokemon label { display: block; margin-bottom: 5px; }
+
+/* Style des boutons pour ajouter ou valider un échange */
+.add-pokemon input[type="submit"],
+.insert-exchange input[type="submit"] { padding: 5px; border-radius: 3px; border: 1px solid #ccc; background-color: #4CAF50; color: white; cursor: pointer; transition: background-color 0.3s ease; }
+
+/* Style des boutons au survol pour ajouter ou valider un échange */
+.add-pokemon input[type="submit"]:hover,
+.insert-exchange input[type="submit"]:hover { background-color: #339933; }
+
+/* Style des boutons pour valider un échange */
+.insert-exchange input[type="submit"] { margin-top: 20px; }
+
+/* Style du contenu du formulaire d'inscription */
+.register-content { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+/* Style du formulaire d'inscription */
+.register-content form { display: flex; flex-direction: column; align-items: center; background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+/* Style des labels du formulaire d'inscription */
+.register-content label { font-size: 18px; margin-bottom: 10px; }
+
+/* Style des champs texte du formulaire d'inscription */
+.register-content input[type="text"],
+.register-content input[type="password"] { width: 100%; padding: 10px; border: none; border-radius: 5px; margin-bottom: 20px; }
+
+/* Style des boutons pour soumettre le formulaire et pour les liens */
+.register-content input[type="submit"],
+.register-content a { background-color: #4CAF50; color: #fff; border-radius: 5px; padding: 10px 20px; cursor: pointer; transition: background-color 0.3s ease-in-out; }
+
+/* Style des boutons au survol pour soumettre le formulaire et pour les liens */
+.register-content input[type="submit"]:hover,
+.register-content a:hover { background-color: #339933; }
+
+/* Style du texte pour les utilisateurs déjà inscrits */
+.already-register { font-size: 18px; }
+
+/* Style des liens du formulaire d'inscription */
+.register-content a { color: #0077FF; text-decoration: none;}
